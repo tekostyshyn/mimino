@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tekostysshyn/mimino.git"
+    "url": "git+https://github.com/tekostyshyn/mimino.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Tetiana Kostyshyn <tekostyshyn@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/tekostyshyn/mimino/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
