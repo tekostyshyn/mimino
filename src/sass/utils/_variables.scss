@@ -1,0 +1,46 @@
+$fontFamilyMain: 'Montserrat', sans-serif;
+$fontFamilyLogo: 'Film P3', sans-serif;
+$fontFamilyTNRoman: 'Times New Roman Cyr', sans-serif;
+
+$colorAccentYellow: #f3c653;
+$colorAccentBrown: #c79002;
+
+$colorBackgroundPrimary: #fffdee;
+$colorBackgroundSecondary: #f0ecd6;
+$colorBackgroundDark: #0e0c07;
+$colorBackgroundGradient: rgba(0, 0, 0, 0.65);
+$colorBackdrop: rgba(0, 0, 0, 0.2);
+
+$colorTextPrimary: #5f5f5f;
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$colorTextGray: #7a7a7a;
+$colorTextLightGray: #b4b4b4;
+$colorDarkGray: #494848;
+$colorLightGray: #828282;
+$colorPlaceholder: #808080;
+$colorDescriptionGray: #BABABA;
+$colorBackgroundImages: #DADADA;
+$colorBorderAdress: rgba(243, 198, 83, 0.7);
+$colorBackgroundButton: rgba(0, 0, 0, 0.4);
+$colorBoxShadow: rgba(0, 0, 0, 0.25);
+$colorAddressMap: #e5e5e5;
+$colorBorderMap: #bababa;
+
+$colorVerticalLine: rgba(186, 186, 186, 0.4);
+$overlayBgr: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+$LinearGradientHeader: linear-gradient(
+  180deg,
+  #000000 0%,
+  rgba(0, 0, 0, 0.55) 54.17%,
+  rgba(0, 0, 0, 0) 100%
+);
+
+$LinearGradientSection: linear-gradient(
+  to left,
+  rgba(0, 0, 0, 0.65),
+  rgba(0, 0, 0, 0.65));
+
+$borderRadiusPrimary: 25px;
+
+$baseTransition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

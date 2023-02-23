@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+
+  @include for-size(mobile) {
+    width: 414px;
+    margin: 0 auto;
+  }
+  @include for-size(tablet) {
+    padding: 0 47px;
+    width: 1024px;
+  }
+  @include for-size(desktop) {
+    padding: 0 85px;
+    width: 1280px;
+  }
+}

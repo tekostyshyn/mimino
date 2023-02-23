@@ -1,0 +1,150 @@
+.footer {
+  position: relative;
+  background-color: $colorBackgroundDark;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include for-size(tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  gap: 85px;
+
+  @media screen and (max-width: 380px) {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  @include for-size(tablet) {
+    padding-right: 75px;
+    gap: 163px;
+  }
+
+  @include for-size(desktop) {
+    padding-right: 101px;
+    gap: 231px;
+  }
+}
+
+.footer__logo {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $fontFamilyLogo;
+  color: $colorAccentYellow;
+  @include font(
+    $weight: 700,
+    $size: 40px,
+    $line-height: 1.08,
+    $letter-spacing: 0.3em
+  );
+
+  @include for-size(tablet) {
+    font-size: 64px;
+  }
+}
+.footer__nav-box {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+.footer__nav-list {
+  @include for-size(mobile-only) {
+    margin-bottom: 32px;
+  }
+
+  @include for-size(tablet) {
+    margin-right: 137px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 199px;
+  }
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer__nav-link {
+  color: $colorAccentYellow;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color $baseTransition;
+  &:hover,
+  &:focus {
+    color: $colorWhite;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 20px;
+  @include for-size(tablet) {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__social-link {
+  color: $colorAccentYellow;
+  transition: border-color $baseTransition;
+  &:hover,
+  &:focus {
+    border-color: $colorWhite;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    width: 143px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    padding: 10px 12px;
+    border: 0.5px solid;
+    border-radius: 2px;
+    border-color: $colorAccentYellow;
+  }
+}
+.footer__social-text {
+  transition: color $baseTransition;
+  .footer__social-link:hover &,
+  .footer__social-link:focus & {
+    color: $colorWhite;
+  }
+
+  @include for-size(mobile-only) {
+    display: none;
+  }
+}
+
+.footer__social-icon {
+  fill: $colorBorderAdress;
+  transition: fill $baseTransition;
+
+  @include for-size(tablet) {
+    fill: $colorAccentYellow;
+  }
+  .footer__social-link:hover &,
+  .footer__social-link:focus & {
+    fill: $colorWhite;
+    animation-name: rotate-icon;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-duration: alternate;
+  }
+}

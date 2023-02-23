@@ -1,0 +1,290 @@
+.room--luxe {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  @media (min-width: 1024px) {
+    padding-top: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 72px;
+  }
+}
+
+.luxe__container {
+  position: relative;
+}
+
+// Label
+.luxe__label-box {
+  margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+}
+
+.luxe__label-text {
+  font-family: $fontFamilyTNRoman;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $colorTextLightGray;
+  margin-bottom: 8px;
+
+  @media (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+  }
+}
+
+.luxe__label-title {
+  font-family: $fontFamilyLogo;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: $colorDarkGray;
+  text-transform: uppercase;
+
+  @media (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 1.08;
+  }
+}
+
+// Room-name
+.luxe__room {
+  margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 176px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 188px;
+  }
+}
+
+.luxe__room-title {
+  font-family: $fontFamilyTNRoman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $colorBlack;
+  margin-bottom: 12px;
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 24px;
+  }
+
+  &--small {
+    text-transform: lowercase;
+  }
+}
+
+.luxe__room-text {
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $colorTextPrimary;
+  width: 258px;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 1.25;
+    height: 80px;
+    width: 439px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 400px;
+  }
+}
+
+// control-box
+.luxe__control-box {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+// Buttons
+
+.buttons-room3 {
+  display: flex;
+  flex-direction: column;
+  @include for-size(tablet) {
+    order: -1;
+  }
+}
+.buttons-room__item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons-room__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.buttons-room__details {
+  margin: 0 auto;
+  background: $colorBlack;
+}
+
+// Picture
+.luxe__box {
+  width: 244px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
+
+  @include for-size(tablet) {
+    width: 400px;
+    position: absolute;
+    right: 112px;
+    top: -100px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+  }
+
+  @include for-size(desktop) {
+    width: 460px;
+    position: absolute;
+    right: 180px;
+  }
+}
+
+.luxe__picture {
+  display: block;
+  width: 100%;
+}
+
+// Slider
+.slider__container {
+  width: auto;
+  // height: auto;
+}
+
+.slider__luxe {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  background-color: $colorBackgroundPrimary;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+  margin-bottom: 20px;
+  left: -32%;
+
+  @include for-size(tablet) {
+    width: 428px;
+    position: relative;
+  }
+
+  @include for-size(desktop) {
+    width: 548px;
+    position: relative;
+  }
+}
+
+.slider__line {
+  width: 1024px;
+  display: flex;
+  position: relative;
+  right: 0;
+  transition: all ease 1s;
+  background-color: $colorBackgroundPrimary;
+  gap: 16px;
+}
+
+.slider__line-img {
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+  background-color: transparent;
+}
+
+.restaurant__flipper-img {
+  padding: 0;
+}
+
+.luxe__flipper-btn {
+  padding: 20px 0;
+  display: flex;
+  gap: 24px;
+  max-width: 96px;
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    left: 378px;
+    bottom: 0;
+    margin-bottom: 0;
+    top: 100%;
+  }
+
+  @media (min-width: 1280px) {
+    left: 542px;
+  }
+}
+
+.luxe__flipper-btn3 {
+  padding: 20px 0;
+  margin-left: auto;
+  @media (min-width: 1024px) {
+    position: absolute;
+    right: 378px;
+    bottom: 0;
+    margin-bottom: 0;
+    top: 100%;
+  }
+
+  @media (min-width: 1280px) {
+    right: 542px;
+  }
+}
+
+.luxe__slider-button {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider__picture {
+  background-color: transparent;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+.luxe__icon {
+  cursor: pointer;
+  fill: $colorBlack;
+  transition: $baseTransition;
+
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}

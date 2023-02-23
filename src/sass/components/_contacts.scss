@@ -1,0 +1,209 @@
+.contacts-section {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 36px;
+
+  @include for-size(tablet) {
+    padding-top: 69px;
+    padding-bottom: 40px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 64px;
+    padding-bottom: 74px;
+  }
+
+  &__logo {
+    margin-bottom: 12px;
+    font-family: $fontFamilyLogo;
+    @include font(700, 40px, calc(43 / 40), 0.3em);
+    color: $colorDarkGray;
+    text-transform: uppercase;
+
+    @include for-size(tablet) {
+      margin-bottom: 8px;
+      @include font(700, 64px, calc(69 / 64), 0.3em);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 16px;
+      color: $colorLightGray;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    @include font(600, '', calc(20 / 16), 0.02em);
+
+    @include for-size(tablet) {
+      margin-bottom: 52px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 40px;
+      @include font(600, 20px, calc(24 / 20), 0.02em);
+    }
+  }
+
+  &__holder {
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+}
+
+.contacts {
+  font-style: normal;
+
+  &__item-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &--high {
+      margin-bottom: 32px;
+    }
+
+    @include for-size(tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include for-size(tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    min-width: 124px;
+    @include font(500, 20px, calc(24 / 20), 0.02em);
+    color: $colorAccentBrown;
+
+    @include for-size(tablet) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title--hidden {
+    opacity: 0;
+  }
+
+  &__link {
+    color: $colorDarkGray;
+
+    &--center {
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorAccentBrown;
+      transition: color $baseTransition;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px 10px 14px;
+    @include font(400, 14px, calc(17 / 14), 0.02em);
+    color: $colorDarkGray;
+    fill: $colorAccentBrown;
+    background-color: $colorWhite;
+    outline: 0.5px solid $colorAccentYellow;
+    border-radius: 2px;
+
+    @include for-size(tablet) {
+      margin-bottom: 24px;
+    }
+
+    @include for-size(desktop) {
+      color: $colorLightGray;
+    }
+  }
+
+  &__address {
+    padding: 8px 33px 8px 16px;
+
+    @include font(400, 16px, calc(20 / 16), 0.01em);
+
+    @include for-size(tablet) {
+      padding: 8px 8px 8px 10px;
+      margin-bottom: 0;
+      max-width: 285px;
+    }
+
+    @include for-size(desktop) {
+      color: $colorLightGray;
+    }
+  }
+
+  &__address,
+  &__hotel {
+    @include for-size(mobile-only) {
+      width: 100%;
+    }
+  }
+
+  &__hotel {
+    max-width: 145px;
+
+    @include for-size(mobile) {
+      max-width: 100%;
+    }
+    @include for-size(tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__icon {
+    margin-right: 14px;
+
+    &--less {
+      margin-right: 10px;
+    }
+  }
+
+  &__phone {
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    @include for-size(mobile) {
+      margin-bottom: 0;
+      margin-right: 8px;
+    }
+  }
+  &__secondary-phone {
+    white-space: nowrap;
+  }
+
+  &__map-container {
+    max-width: 384px;
+    height: 220px;
+
+    @include for-size(tablet) {
+      max-width: 634px;
+      width: 535px;
+      height: 412px;
+    }
+
+    @include for-size(desktop) {
+      width: 634px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $colorBorderMap;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px $colorBoxShadow;
+
+    @include for-size(tablet) {
+      box-shadow: 5px 5px 70px 17px $colorBoxShadow;
+    }
+  }
+}

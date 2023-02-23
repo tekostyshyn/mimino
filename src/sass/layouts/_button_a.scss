@@ -1,0 +1,21 @@
+.button-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 236px;
+  color: $colorAccentYellow;
+  background: $colorBackgroundButton;
+  border: 2px solid $colorWhite;
+  border-radius: 25px;
+  font-family: 'Montserrat';
+  @include font(700, 16px, 1.25, 0.02em);
+  text-align: center;
+  transition: color $baseTransition, background-color $baseTransition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $colorWhite;
+  }
+}

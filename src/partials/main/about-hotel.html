@@ -1,0 +1,78 @@
+<section class="about-hotel">
+  <span class="decor"></span>
+  <div class="container about-hotel__container">
+    <h2 class="visually-hidden">About our hotel</h2>
+
+    <span class="about-hotel__title">Amet minim mollit non</span>
+
+    <span class="about-hotel__logo">Mimiho</span>
+
+    <span class="about-hotel__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </span>
+
+    <picture class="about-hotel__picture hotel__picture">
+      <source srcset="
+          /src/images/hotel_images/hotel-desktop-1.jpg    1x,
+          /src/images/hotel_images/hotel-desktop-1@2x.jpg 2x
+        " media="(min-width: 1280px)" />
+      <source srcset="
+          /src/images/hotel_images/hotel-tablet-1.jpg    1x,
+          /src/images/hotel_images/hotel-tablet-1@2x.jpg 2x
+        " media="(min-width: 1024px)" />
+      <source srcset="
+          /src/images/hotel_images/hotel-mobile-1.jpg    1x,
+          /src/images/hotel_images/hotel-mobile-1@2x.jpg 2x
+        " media="(min-width: 414px)" />
+      <img class="hotel__img-left" src="/src/images/hotel_images/hotel-mobile-1.jpg " alt="Двохмісний номер" />
+    </picture>
+
+    <figure class="hotel__post">
+      <picture class="hotel__picture">
+        <source srcset="
+          /src/images/hotel_images/hotel-desktop-2.jpg    1x,
+          /src/images/hotel_images/hotel-desktop-2@2x.jpg 2x
+        " media="(min-width: 1280px)" />
+        <source srcset="
+          /src/images/hotel_images/hotel-tablet-2.jpg    1x,
+          /src/images/hotel_images/hotel-tablet-2@2x.jpg 2x
+        " media="(min-width: 1024px)" />
+        <source srcset="
+          /src/images/hotel_images/hotel-mobile-2.jpg    1x,
+          /src/images/hotel_images/hotel-mobile-2@2x.jpg 2x
+        " media="(min-width: 414px)" />
+        <img class="hotel__img-left" src="/src/images/hotel_images/hotel-mobile-2.jpg" alt="Двохмісний номер" />
+      </picture>
+
+      <figcaption class="hotel__post-text hotel__post-color">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </figcaption>
+    </figure>
+    <div class="swiper-container-about-hotel hotel__picture">
+      <div class="swiper-wrapper swiper-wrapper-about-hotel">
+        <img class="swiper-slide hotel__picture" src="./images/hotel_images/slider1-@1x.jpg" alt="slide1">
+        <img class="swiper-slide hotel__picture" src="./images/hotel_images/slider2-@1x.jpg" alt="slide2">
+        <img class="swiper-slide hotel__picture" src="./images/hotel_images/bedroom3_desk@1x.jpg" alt="slide3">
+        <img class="swiper-slide hotel__picture" src="./images/hotel_images/bedroom6_mob@1x.jpg" alt="slide4">
+      </div>
+    </div>
+
+    <div class="swiper-button swiper-button--l">
+      <div class="swiper-button-prev-ah">
+        <svg class="restaurant__icon luxe__icon" width="32" height="32">
+          <use href="/src/images/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next-ah">
+        <svg class="restaurant__icon luxe__icon" width="32" height="32">
+          <use href="/src/images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

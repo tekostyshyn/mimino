@@ -1,0 +1,97 @@
+<div id="data-modal-room" class="backdrop is-hidden">
+  <div class="modal">
+    <button
+      data-id="data-modal-room"
+      class="close modal__close-button"
+      type="button"
+    ></button>
+    <h2 class="modal__title modal__title--biggerfont">Забронювати номер</h2>
+    <form>
+      <div class="modal__box">
+        <div class="modal__field">
+          <input
+            type="text"
+            name="client-name"
+            id="client-name-room"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
+            placeholder="Ваше ім’я"
+            required
+            title="Вкажіть ваше ім'я за допомогою літер"
+            class="modal__input"
+          />
+          <label class="modal__label" for="client-name-room">
+            На кого забронювати номер?</label
+          >
+        </div>
+        <div class="modal__field">
+          <input
+            type="tel"
+            name="phone-input"
+            id="phone-input"
+            required
+            placeholder="+38 (___) ___-__-__"
+            title="Номер телефону має містити 10 цифр"
+            pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
+            class="modal__input"
+          />
+          <label class="modal__label" for="phone-input"> Номер телефону</label>
+        </div>
+        <div class="modal__field"></div>
+        <div class="modal__field">
+          <select id="room">
+            <option value="hide">Двомісний люкс</option>
+            <option value="Двомісний люкс">Двомісний люкс</option>
+            <option value="Трьохмісний номер">Трьохмісний номер</option>
+            <option value="Двомісний номер">Двомісний номер</option>
+        </select>
+          <label class="modal__label" for="room"> Категорія номеру </label>
+        </div>
+        <div class="modal__field">
+          <div class="modal__datepickerwrapper">
+            <span class="modal__datepickerbox">
+              <input
+                type="text"
+                id="datepicker2"
+                name="datepicker2"
+                placeholder="Сьогодні"
+                required
+                class="modal__input"
+                autocomplete="off"
+              />
+            </span>
+          </div>
+          <label
+            class="modal__label modal__label--biggerfont"
+            for="datepicker2"
+          >
+            Дата заїзду
+          </label>
+        </div>
+        <div class="modal__field">
+          <div class="modal__datepickerwrapper">
+            <span class="modal__datepickerbox">
+              <input
+                type="text"
+                id="datepicker3"
+                name="datepicker3"
+                placeholder="Сьогодні"
+                required
+                class="modal__input"
+                autocomplete="off"
+              />
+            </span>
+          </div>
+          <label
+            class="modal__label modal__label--bigmargin modal__label--biggerfont"
+            for="datepicker3"
+          >
+            Дата виїзду
+          </label>
+        </div>
+      </div>
+      <button class="modal__button" type="submit" data-modal-room-close>
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="414"
+   height="1"
+   viewBox="0 0 109.5375 0.26458334"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1076">
+      <stop
+         style="stop-color:#bababa;stop-opacity:1;"
+         offset="0"
+         id="stop1072" />
+      <stop
+         style="stop-color:#bababa;stop-opacity:0;"
+         offset="1"
+         id="stop1074" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1076"
+       id="linearGradient1078"
+       x1="37.041668"
+       y1="0.13229166"
+       x2="37.306251"
+       y2="0.13229166"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1080"
+       x="-0.0028732836"
+       y="-0.0028732836"
+       width="1.0057466"
+       height="1.0057466">
+      <feGaussianBlur
+         stdDeviation="0.00031675953"
+         id="feGaussianBlur1082" />
+    </filter>
+    <linearGradient
+       xlink:href="#linearGradient1076"
+       id="linearGradient1078-8"
+       x1="37.041668"
+       y1="0.13229166"
+       x2="37.306252"
+       y2="0.13229166"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1080-9"
+       x="-0.0028732836"
+       y="-0.0028732836"
+       width="1.0057466"
+       height="1.0057466">
+      <feGaussianBlur
+         stdDeviation="0.00031675953"
+         id="feGaussianBlur1082-5" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1080-9-9"
+       x="-0.0028732836"
+       y="-0.0028732836"
+       width="1.0057466"
+       height="1.0057466">
+      <feGaussianBlur
+         stdDeviation="0.00031675953"
+         id="feGaussianBlur1082-5-6" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1080-5"
+       x="-0.0028732836"
+       y="-0.0028732836"
+       width="1.0057466"
+       height="1.0057466">
+      <feGaussianBlur
+         stdDeviation="0.00031675953"
+         id="feGaussianBlur1082-7" />
+    </filter>
+    <linearGradient
+       xlink:href="#linearGradient1076"
+       id="linearGradient1508"
+       gradientUnits="userSpaceOnUse"
+       x1="37.041668"
+       y1="0.13229166"
+       x2="37.306251"
+       y2="0.13229166" />
+    <linearGradient
+       xlink:href="#linearGradient1076"
+       id="linearGradient1510"
+       gradientUnits="userSpaceOnUse"
+       x1="37.041668"
+       y1="0.13229166"
+       x2="37.306251"
+       y2="0.13229166" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="opacity:0.4;mix-blend-mode:normal;fill:url(#linearGradient1078);fill-opacity:1;stroke-width:0;filter:url(#filter1080)"
+       id="rect846"
+       width="0.26458332"
+       height="0.26458332"
+       x="37.041668"
+       y="0"
+       transform="matrix(0.49577159,0,0,1.0017716,18.809027,7.9916121e-4)" />
+    <rect
+       style="mix-blend-mode:normal;fill:url(#linearGradient1078-8);fill-opacity:1;stroke-width:0;filter:url(#filter1080-9);opacity:0.4"
+       id="rect846-5"
+       width="0.26458332"
+       height="0.26458332"
+       x="37.041668"
+       y="0"
+       transform="matrix(-0.49577159,0,0,-1.0017716,55.53744,0.26585123)" />
+    <rect
+       style="mix-blend-mode:normal;fill:url(#linearGradient1508);fill-opacity:1;stroke-width:0;filter:url(#filter1080-5);opacity:0.4"
+       id="rect846-0"
+       width="0.26458332"
+       height="0.26458332"
+       x="37.041668"
+       y="0"
+       transform="matrix(0.49577159,0,0,1.0017716,53.998615,7.9522252e-4)" />
+    <rect
+       style="mix-blend-mode:normal;fill:url(#linearGradient1510);fill-opacity:1;stroke-width:0;filter:url(#filter1080-9-9);opacity:0.4"
+       id="rect846-5-5"
+       width="0.26458332"
+       height="0.26458332"
+       x="37.041668"
+       y="0"
+       transform="matrix(-0.49577159,0,0,-1.0017716,90.727023,0.26584722)" />
+  </g>
+</svg>

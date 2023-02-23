@@ -1,0 +1,122 @@
+.about-kitchen {
+  position: relative;
+  &__container {
+    position: relative;
+  }
+
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  @include for-size(tablet) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-family: $fontFamilyTNRoman;
+    @include font(400, 20px, calc(23 / 20));
+    color: $colorTextLightGray;
+
+    @include for-size(tablet) {
+      margin-bottom: 4px;
+      @include font(400, 32px, calc(37 / 32));
+    }
+  }
+
+  &__logo {
+    margin-bottom: 12px;
+    font-family: $fontFamilyLogo;
+    @include font(700, 40px, calc(43 / 40), 0.3em);
+    color: $colorDarkGray;
+    text-transform: uppercase;
+
+    @include for-size(tablet) {
+      margin-bottom: 24px;
+      @include font(700, 64px, calc(69 / 64), 0.3em);
+    }
+  }
+
+  &__text {
+    margin-bottom: 28px;
+    max-width: 258px;
+    @include font(600, 12px, calc(15 / 12), 0.02em);
+
+    @include for-size(tablet) {
+      margin-bottom: 142px;
+      max-width: 439px;
+      @include font(600, 16px, calc(20 / 16), 0.02em);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 162px;
+      max-width: 518px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    @include for-size(tablet) {
+      display: block;
+      margin-bottom: 0;
+      position: absolute;
+      top: -152px;
+      left: 512px;
+    }
+
+    @include for-size(desktop) {
+      left: 640px;
+    }
+  }
+
+  &__img-right,
+  &__img-left {
+    box-shadow: 2px 2px 60px 2px $colorBoxShadow;
+    border-radius: 2px;
+
+    @include for-size(tablet) {
+      box-shadow: 5px 5px 70px 17px $colorBoxShadow;
+    }
+  }
+
+  &__img-left {
+    margin-bottom: 32px;
+    @include for-size(tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include for-size(tablet) {
+      gap: 48px;
+    }
+
+    @include for-size(desktop) {
+      gap: 32px;
+    }
+  }
+
+  &__description {
+    @include font(600, 12px, calc(15 / 12), 0.02em);
+    color: $colorAccentBrown;
+
+    @include for-size(tablet) {
+      @include font(600, 16px, calc(20 / 16), 0.02em);
+      max-width: 312px;
+    }
+  }
+}
+
+.flipper-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-bottom: 20px;
+}

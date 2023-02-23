@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  gap: 20px;
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  &__icon {
+    fill: $colorBorderAdress;
+    transition: fill $baseTransition;
+    &:hover,
+    &:focus {
+      fill: $colorWhite;
+      animation-name: rotate-icon;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-duration: alternate;
+    }
+  }
+}

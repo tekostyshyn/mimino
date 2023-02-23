@@ -1,0 +1,76 @@
+.decor {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  width: 0;
+  background-color: $colorVerticalLine;
+  filter: blur(0.5);
+  pointer-events: all;
+  @include for-size(tablet) {
+    width: 1px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 0;
+    left: 66px;
+    height: 100%;
+    background-color: $colorVerticalLine;
+    pointer-events: all;
+    @include for-size(tablet) {
+      left: 234px;
+    }
+    @include for-size(desktop) {
+      left: 302px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 0;
+    left: -66px;
+    height: 100%;
+    background-color: $colorVerticalLine;
+    pointer-events: all;
+    @include for-size(tablet) {
+      left: -234px;
+    }
+    @include for-size(desktop) {
+      left: -302px;
+    }
+  }
+}
+
+.decor-double {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  width: 0;
+  background-color: $colorVerticalLine;
+  filter: blur(0.5);
+  pointer-events: all;
+  @include for-size(tablet) {
+    width: 1px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 0;
+    left: 66px;
+    height: 100%;
+    background-color: $colorVerticalLine;
+    pointer-events: all;
+    @include for-size(tablet) {
+      left: 234px;
+    }
+    @include for-size(desktop) {
+      left: 302px;
+    }
+  }
+}

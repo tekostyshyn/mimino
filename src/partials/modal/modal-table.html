@@ -1,0 +1,88 @@
+<div id="data-modal-table" class="backdrop is-hidden">
+  <div class="modal">
+    <button
+      data-id="data-modal-table"
+      class="close modal__close-button"
+      type="button"
+    ></button>
+    <h2 class="modal__title modal__title--biggerfont">Забронювати столик</h2>
+    <form>
+      <div class="modal__box modal__box--norawgap">
+        <div class="modal__field modal__field--flex">
+          <div>
+            <input
+              type="text"
+              name="client-name"
+              id="client-name"
+              pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
+              placeholder="Ваше ім’я"
+              required
+              title="Вкажіть ваше ім'я за допомогою літер"
+              class="modal__input"
+            />
+            <label class="modal__label" for="client-name">
+              На кого забронювати столик?</label
+            >
+          </div>
+          <div>
+            <input
+              type="tel"
+              name="client-phone"
+              id="client-phone"
+              required
+              placeholder="+38 (___) ___-__-__"
+              title="Номер телефону має містити 10 цифр"
+              pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
+              class="modal__input"
+            />
+            <label class="modal__label" for="client-phone">
+              Номер телефону</label
+            >
+          </div>
+        </div>
+        <div class="modal__field modal__field--flex">
+          <div>
+            <select id="number-clients">
+              <option value="hide">2</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value=">8">8 і більше</option>
+          </select>
+
+            <label class="modal__label" for="number-clients">
+              Столик на яку кількість осіб?
+            </label>
+          </div>
+          <div>
+            <div class="modal__datepickerwrapper">
+              <span class="modal__datepickerbox">
+                <input
+                  type="text"
+                  id="datepicker"
+                  placeholder="Сьогодні"
+                  required
+                  class="modal__input"
+                  autocomplete="off"
+                />
+              </span>
+            </div>
+            <label
+              class="modal__label modal__label--bigmargin"
+              for="datepicker"
+            >
+              На яку дату бронювати?
+            </label>
+          </div>
+        </div>
+      </div>
+      <button class="modal__button" type="submit" data-modal-table-close>
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>

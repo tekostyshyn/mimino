@@ -1,0 +1,170 @@
+.menu {
+  position: relative;
+  padding: 32px 0;
+  background-color: $colorBackgroundPrimary;
+  @include for-size(tablet) {
+    padding: 58px 0 40px 0;
+    background-color: $colorBackgroundSecondary;
+  }
+  @include for-size(desktop) {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 58px 0 60px 0;
+  }
+}
+
+.menu__title {
+  font-family: $fontFamilyTNRoman;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  color: $colorBlack;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  @include for-size(tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.menu__container {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 23px;
+  }
+}
+.menu__container--col-1,
+.menu__container--col-2 {
+  @include for-size(tablet) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 106px) / 2);
+    gap: 20px;
+  }
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 140px) / 2);
+  }
+}
+
+.dishes {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.dishes-drinks {
+  margin-bottom: 32px;
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.dishes__category {
+  font-family: $fontFamilyTNRoman;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: $colorBlack;
+  text-align: left;
+  margin-bottom: 16px;
+  @include for-size(tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.dishes__caption {
+  font-family: $fontFamilyMain;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding-bottom: 4px;
+  width: 55%;
+
+  @include for-size(mobile) {
+    width: 225px;
+  }
+  @include for-size(tablet) {
+    width: 221px;
+  }
+  @include for-size(desktop) {
+    width: 262px;
+  }
+}
+
+.dishes__ingredients {
+  font-family: $fontFamilyMain;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding-bottom: 8px;
+  @include for-size(desktop) {
+    padding-bottom: 12px;
+  }
+}
+
+.dishes__portion {
+  font-family: $fontFamilyMain;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding: 4px 0;
+  text-align: right;
+
+  @include for-size(mobile) {
+    text-align: left;
+    padding: 4px 0 4px 32px;
+  }
+  @include for-size(tablet) {
+    padding: 4px 0 4px 40px;
+  }
+  .dishes-drinks & {
+    padding: 4px 0;
+
+    @include for-size(mobile) {
+      padding: 4px 0 4px 20px;
+    }
+    @include for-size(tablet) {
+      padding: 4px 0 4px 40px;
+    }
+  }
+}
+
+.dishes__price {
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  text-align: right;
+  padding: 4px 0;
+
+  @include for-size(mobile) {
+    padding: 4px 0 4px 18px;
+  }
+  .dishes-drinks & {
+    padding: 4px 0;
+  }
+}
+
+.menu__button {
+  background-color: $colorBlack;
+  margin: 0 auto;
+  @include for-size(tablet) {
+    margin: 0 0 0 auto;
+  }
+}

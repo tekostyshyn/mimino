@@ -1,0 +1,125 @@
+<section class="about-kitchen">
+  <span class="decor"></span>
+  <div class="container about-kitchen__container">
+    <h2 class="visually-hidden">Про нашу кухню</h2>
+
+    <p class="about-kitchen__title">Amet minim mollit non</p>
+    <h3 class="about-kitchen__logo">Mimiho</h3>
+    <p class="about-kitchen__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+
+    <picture class="about-kitchen__img">
+      <source
+        srcset="
+          ./images/about-kitchen/mobile/kitchen-244.jpg 1x,
+          ./images/about-kitchen/mobile/kitchen-488.jpg 2x,
+          ./images/about-kitchen/mobile/kitchen-732.jpg 3x
+        "
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="
+          ./images/about-kitchen/tablet/kitchen-400.jpg  1x,
+          ./images/about-kitchen/tablet/kitchen-800.jpg  2x,
+          ./images/about-kitchen/tablet/kitchen-1200.jpg 3x
+        "
+        media="(max-width: 1279px)"
+      />
+      <source
+        srcset="
+          ./images/about-kitchen/desktop/kitchen-460.jpg  1x,
+          ./images/about-kitchen/desktop/kitchen-920.jpg  2x,
+          ./images/about-kitchen/desktop/kitchen-1380.jpg 3x
+        "
+        media="(min-width: 1280px)"
+      />
+      <img
+        class="about-kitchen__img-right"
+        src="./images/about-kitchen/mobile/kitchen-244.jpg"
+        alt="Фото кухаря, що готує страву на сковороді"
+      />
+    </picture>
+    <div class="about-kitchen__holder">
+      <picture>
+        <source
+          srcset="
+            ./images/about-kitchen/mobile/meat-200.jpg 1x,
+            ./images/about-kitchen/mobile/meat-400.jpg 2x,
+            ./images/about-kitchen/mobile/meat-600.jpg 3x
+          "
+          media="(max-width: 1023px)"
+        />
+        <source
+          srcset="
+            ./images/about-kitchen/tablet/meat-350.jpg  1x,
+            ./images/about-kitchen/tablet/meat-700.jpg  2x,
+            ./images/about-kitchen/tablet/meat-1050.jpg 3x
+          "
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/about-kitchen/desktop/meat-460.jpg  1x,
+            ./images/about-kitchen/desktop/meat-920.jpg  2x,
+            ./images/about-kitchen/desktop/meat-1380.jpg 3x
+          "
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="about-kitchen__img-left"
+          src="./images/about-kitchen/mobile/meat-200.jpg"
+          alt="Фото сирого м'яса на обробній дошці"
+        />
+      </picture>
+
+      <p class="about-kitchen__description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <div class="luxe__control-box1">
+      <div class="swiper-container-kitchen">
+        <div class="swiper-wrapper swiper-wrapper-k">
+          <img
+            class="swiper-slide"
+            src="./images/about-kitchen/mobile/flour-245.jpg"
+            alt="slide1"
+          />
+          <img
+            class="swiper-slide"
+            src="./images/about-kitchen/mobile/khinkali-245.jpg"
+            alt="slide2"
+          />
+          <img
+            class="swiper-slide"
+            src="./images/about-kitchen/mobile/unsplash_2LzqR50_NTw@1x.jpg"
+            alt="slide3"
+          />
+          <img
+            class="swiper-slide"
+            src="./images/about-kitchen/mobile/unsplash_7BbfjQoBfqA@1x.jpg"
+            alt="slide4"
+          />
+        </div>
+      </div>
+
+      <ul class="flipper-btn">
+        <li class="swiper-button-prev-k">
+          <svg class="restaurant__icon luxe__icon" width="32" height="32">
+            <use href="/src/images/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </li>
+        <li class="swiper-button-next-k">
+          <svg class="restaurant__icon luxe__icon" width="32" height="32">
+            <use href="/src/images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

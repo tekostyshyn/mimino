@@ -1,0 +1,39 @@
+<div id="data-modal-price" class="backdrop is-hidden">
+  <div class="modal">
+    <button data-id="data-modal-price" class="close modal__close-button" type="button">
+    </button>
+    <h2 class="modal__title">Ціни на номер</h2>
+    <h3 class="modal__subtitle">Двомісний люкс</h3>
+    <h4 class="modal__heading">Категорія номеру</h4>
+    <form>
+      <div class="modal__box">
+        <div class="modal__field">
+          <select id="number-clients-price">
+            <option value="hide">2</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+          <label class="modal__label modal__label--biggerfont" for="number-clients-price">
+            Кількість ночей
+          </label>
+        </div>
+        <div class="modal__field">
+          <input class="modal__input" type="number" name="total-price" id="total-price" placeholder="1000" readonly
+          />
+          <label class="modal__label modal__label--bigmargin modal__label--biggerfont" for="total-price">
+            грн
+          </label>
+        </div>
+      </div>
+      <button class="modal__button" type="submit" data-modal-price-close>
+        Забронювати номер
+      </button>
+    </form>
+  </div>
+</div>

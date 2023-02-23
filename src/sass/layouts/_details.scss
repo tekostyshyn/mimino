@@ -1,0 +1,166 @@
+.details {
+  position: relative;
+  &--hotel-bgr {
+    background-image: $overlayBgr,
+      url('../images/main_images/details-hotel-mobile@1x.jpg');
+    @include for-size(retina) {
+      background-image: $overlayBgr,
+        url('../images/main_images/details-hotel-mobile@2x.jpg');
+    }
+    @include for-size(tablet) {
+      background-image: $overlayBgr,
+        url('../images/main_images/details-hotel-tablet@1x.jpg');
+      @include for-size(retina) {
+        background-image: $overlayBgr,
+          url('../images/main_images/details-hotel-tablet@2x.jpg');
+      }
+    }
+    @include for-size(desktop) {
+      background-image: $overlayBgr,
+        url('../images/main_images/details-hotel-desktop@1x.jpg');
+      @include for-size(retina) {
+        background-image: $overlayBgr,
+          url('../images/main_images/details-hotel-desktop@2x.jpg');
+      }
+    }
+  }
+  &--restaurant-bgr {
+    background-image: $LinearGradientSection,
+      url('../images/restaurant-details/mobile/restaurant-details-418@1x.jpg');
+
+    @include for-size(retina) {
+      background-image: $LinearGradientSection,
+        url('../images/restaurant-details/mobile/restaurant-details-418@2x.jpg');
+    }
+
+    @include for-size(tablet) {
+      background-image: $LinearGradientSection,
+        url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg');
+      height: 620px;
+      padding: 48px 0 40px 0;
+
+      @include for-size(retina) {
+        background-image: $LinearGradientSection,
+          url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg');
+      }
+    }
+
+    @include for-size(desktop) {
+      background-image: $LinearGradientSection,
+        url('../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg');
+
+      @include for-size(retina) {
+        background-image: $LinearGradientSection,
+          url('../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg');
+      }
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 0 40px;
+  @include for-size(tablet) {
+    padding-top: 48px;
+  }
+  @include for-size(desktop) {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__container {
+    max-width: 259px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: auto;
+    margin-bottom: 48px;
+    &--rest {
+      margin-left: auto;
+      margin-right: 0;
+      align-items: flex-start;
+    }
+    @include for-size(tablet) {
+      max-width: 694px;
+    }
+    @include for-size(desktop) {
+      max-width: 694px;
+    }
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 12px;
+    margin-right: -0.3em;
+    font-family: Film P3;
+    @include font(700, 40px, 1.075, 0.3em);
+    color: $colorWhite;
+    text-transform: uppercase;
+    @include for-size(tablet) {
+      @include font('', 64px, 1.08, '');
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $colorWhite;
+    @include font(700, 20px, 1.2, 0.02em);
+    @include for-size(tablet) {
+      @include font('', 24px, '', '');
+    }
+  }
+  &__text {
+    max-width: 243px;
+    text-align: left;
+    @include font(600, 12px, 1.25, 0.02em);
+    color: $colorBorderMap;
+    @include for-size(tablet) {
+      max-width: 595px;
+      @include font('', 16px, 1.25, '');
+    }
+    @include for-size(desktop) {
+      max-width: 610px;
+    }
+  }
+  &__content-box {
+    @include for-size(tablet) {
+      display: flex;
+      align-items: flex-end;
+      &--rest {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &__button-box {
+    @include for-size(tablet) {
+      padding-bottom: 48px;
+      margin-left: 32px;
+      &--rest {
+        margin-right: 32px;
+        margin-left: 0;
+      }
+    }
+  }
+  &__button-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &__button-a {
+    width: 236px;
+    margin: 0 auto;
+  }
+}
+
+// .details__swiper {
+//   @include for-size(mobile-only) {
+//     margin-left: -15px;
+//   }
+//   @include for-size(desktop) {
+//     margin-left: -33px;
+//   }
+// }
+
+// .details__swiper--rest {
+//   @include for-size(mobile-only) {
+//     margin-right: -15px;
+//   }
+//   @include for-size(desktop) {
+//     margin-right: -33px;
+//   }
+// }
