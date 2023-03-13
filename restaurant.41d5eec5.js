@@ -1,0 +1,2 @@
+const e=document.getElementsByClassName("open"),t=document.getElementsByClassName("close");Array.from(t,(e=>{e.addEventListener("click",(e=>{let t=e.target.getAttribute("data-id");document.getElementById(t).classList.add("is-hidden"),document.body.classList.remove("modal-open")}))})),Array.from(e,(e=>{e.addEventListener("click",(e=>{let t=e.target.getAttribute("data-id");document.getElementById(t).classList.remove("is-hidden"),document.body.classList.add("modal-open")}))}));
+//# sourceMappingURL=restaurant.41d5eec5.js.map
