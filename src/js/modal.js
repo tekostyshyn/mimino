@@ -1,5 +1,5 @@
-var openBtn = document.getElementsByClassName('open');
-var closeBtn = document.getElementsByClassName('close');
+const openBtn = document.getElementsByClassName('open');
+const closeBtn = document.getElementsByClassName('close');
 Array.from(closeBtn, closeButton => {
   closeButton.addEventListener('click', el => {
     let btnId = el.target.getAttribute('data-id');
@@ -14,3 +14,4 @@ Array.from(openBtn, openButton => {
     document.body.classList.add('modal-open');
   });
 });
+

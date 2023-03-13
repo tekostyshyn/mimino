@@ -11,7 +11,7 @@ $(document).ready(function () {
 // custom calendar
 
 $(function () {
-  $('#datepicker').datepicker({
+  $('.datepick').datepicker({
     dateFormat: 'dd/mm/yy',
     monthNames: [
       'Січень',
@@ -31,59 +31,6 @@ $(function () {
   });
 });
 
-$(function () {
-  $('#datepicker2').datepicker({
-    dateFormat: 'dd/mm/yy',
-    monthNames: [
-      'Січень',
-      'Лютий',
-      'Березень',
-      'Квітень',
-      'Травень',
-      'Червень',
-      'Липень',
-      'Серпень',
-      'Вересень',
-      'Жовтень',
-      'Листопад',
-      'Грудень',
-    ],
-    dayNamesMin: ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'нд'],
-  });
-});
-
-$(function () {
-  $('#datepicker3').datepicker({
-    dateFormat: 'dd/mm/yy',
-    monthNames: [
-      'Січень',
-      'Лютий',
-      'Березень',
-      'Квітень',
-      'Травень',
-      'Червень',
-      'Липень',
-      'Серпень',
-      'Вересень',
-      'Жовтень',
-      'Листопад',
-      'Грудень',
-    ],
-    dayNamesMin: ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'нд'],
-  });
-});
-
-$(function () {
-  $('#datepicker').datepicker();
-});
-
-$(function () {
-  $('#datepicker2').datepicker();
-});
-
-$(function () {
-  $('#datepicker3').datepicker();
-});
 
 // custom select
 

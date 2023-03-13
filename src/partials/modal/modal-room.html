@@ -43,7 +43,7 @@
             <option value="Двомісний люкс">Двомісний люкс</option>
             <option value="Трьохмісний номер">Трьохмісний номер</option>
             <option value="Двомісний номер">Двомісний номер</option>
-        </select>
+          </select>
           <label class="modal__label" for="room"> Категорія номеру </label>
         </div>
         <div class="modal__field">
@@ -51,18 +51,17 @@
             <span class="modal__datepickerbox">
               <input
                 type="text"
-                id="datepicker2"
-                name="datepicker2"
                 placeholder="Сьогодні"
                 required
-                class="modal__input"
+                class="modal__input datepick"
+                id="datepicker1"
                 autocomplete="off"
               />
             </span>
           </div>
           <label
+            for="datepicker1"
             class="modal__label modal__label--biggerfont"
-            for="datepicker2"
           >
             Дата заїзду
           </label>
@@ -71,19 +70,18 @@
           <div class="modal__datepickerwrapper">
             <span class="modal__datepickerbox">
               <input
+                id="datepicker2"
                 type="text"
-                id="datepicker3"
-                name="datepicker3"
                 placeholder="Сьогодні"
                 required
-                class="modal__input"
+                class="modal__input datepick"
                 autocomplete="off"
               />
             </span>
           </div>
           <label
+            for="datepicker2"
             class="modal__label modal__label--bigmargin modal__label--biggerfont"
-            for="datepicker3"
           >
             Дата виїзду
           </label>
