@@ -18,6 +18,8 @@
     "url": "https://github.com/tekostyshyn/mimino/issues"
   },
   "dependencies": {
+    "custom-select": "^1.1.15",
+    "flatpickr": "^4.6.13",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
