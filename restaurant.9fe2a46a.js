@@ -1,2 +1,0 @@
-!function(){var e=document.getElementsByClassName("open"),t=document.getElementsByClassName("close");Array.from(t,(function(e){e.addEventListener("click",(function(e){var t=e.target.getAttribute("data-id");document.getElementById(t).classList.add("is-hidden"),document.body.classList.remove("modal-open")}))})),Array.from(e,(function(e){e.addEventListener("click",(function(e){var t=e.target.getAttribute("data-id");document.getElementById(t).classList.remove("is-hidden"),document.body.classList.add("modal-open")}))}))}();
-//# sourceMappingURL=restaurant.9fe2a46a.js.map
