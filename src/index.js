@@ -50,3 +50,264 @@ Array.from(openBtn, openButton => {
     document.body.classList.add('modal-open');
   });
 });
+
+// swiper
+
+const swiper = new Swiper('.swiper-container-hotel', {
+  slidesPerView: 1.2,
+  leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 20,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
+  },
+  breakpoints: {
+    414: {
+      slidesPerView: 1.34,
+    },
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperRest = new Swiper('.swiper-container-restaurant', {
+  slidesPerView: 1.35,
+  leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 20,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r',
+    prevEl: '.swiper-button-next-r',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperRoom = new Swiper('.swiper-container-room', {
+  slidesPerView: 1,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  // spaceBetween: 10,
+  loop: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-rh',
+    prevEl: '.swiper-button-next-rh',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 1,
+      // spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 1,
+      // spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperRoom2 = new Swiper('.swiper-container-room2', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2',
+    prevEl: '.swiper-button-next-r2',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperRoom2l = new Swiper('.swiper-container-room2l', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2l',
+    prevEl: '.swiper-button-next-r2l',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperRoom3 = new Swiper('.swiper-container-room3', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r3',
+    prevEl: '.swiper-button-next-r3',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperKitchen = new Swiper('.swiper-container-kitchen', {
+  slidesPerView: 1.32,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 24,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-k',
+    prevEl: '.swiper-button-next-k',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperH = new Swiper('.swiper-container-about-hotel', {
+  slidesPerView: 1.25,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 20,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-ah',
+    prevEl: '.swiper-button-next-ah',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+const swiperAboutRest = new Swiper('.swiper-container-about-rest', {
+  slidesPerView: 1.32,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 24,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-ar',
+    prevEl: '.swiper-button-next-ar',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
