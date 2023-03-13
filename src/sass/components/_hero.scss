@@ -403,7 +403,7 @@
   bottom: 40px;
 
   @media screen and (max-width: 1023px) {
-    left: 109px;
+    left: 80px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -438,4 +438,8 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
+}
+
+.hero__network-icon {
+  fill: $colorBorderAdress;
 }
